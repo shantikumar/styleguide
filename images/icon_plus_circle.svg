@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4185 337 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="ic_add_circle_24px" transform="translate(3980)">
+    <path id="ic_add_circle_24px-2" data-name="ic_add_circle_24px" class="cls-1" d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm5,11H13v4H11V13H7V11h4V7h2v4h4Z" transform="translate(203 335)"/>
+  </g>
+</svg>

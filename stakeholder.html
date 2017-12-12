@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UI Kits - Example page layout structure</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        
+        <link rel="stylesheet" href="css/tables/responsive.dataTables.css">
+        
+    </head>
+    <body>
+        <a href="javascript:void(0)" class="closebtn hidden" id="closeNav">&nbsp;</a>
+        <header>
+            <div class="top-nav">
+               <div class="visible-xs-block visible-sm-block">
+                   <button type="button" class="navbar-toggle collapsed" id="nav-button">
+                       <span class="sr-only">Toggle navigation</span>
+                       <img src="images/icon_menu.svg" width="24px" height="24px">
+                   </button>
+                   <span class="navbar-brand">New project</span>
+               </div>
+            
+                <nav class="search-nav">
+                   <div class="container-fluid">
+                       <form class="nav-form search-nav-left hidden-xs" role="search" id="globalSearch">
+                           <div class="form-group">
+                               <a href="" id="backSearch" class="visible-xs-block visible-sm-block"><img src="images/icon_back.svg" width="18px" height="18px"></a>
+                               <img src="images/icon_search.svg" width="18px" height="18px" class="hidden-xs">
+                               <input type="search" name="search" class="form-control" placeholder="Search for projects">
+                           </div>
+                       </form>
+                       <div class="dropdown active search-nav-left">
+                           <a href="#" class="dropdown-toggle" id="drop-notification" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <img src="images/icon_notifications.svg"> <span class="badge top">4</span> </a>
+                           <ul class="dropdown-menu drop-medium list-drop-group" aria-labelledby="dLabel">
+                              <li class="heading">Notifications</li>
+                               <li>
+                                   Evaluations for <strong>November 2017</strong> must be completed by 20/10/2017.
+                                   <span class="badge transparent">Today, 2 hrs ago</span>
+                                </li>
+                                <li>
+                                   Cras justo <strong>odioCras</strong> justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Mon, 06/11/2017</span>
+                                </li>
+                               <li>
+                                   Cras justo odioCras justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Wed, 25/10/2017</span>
+                                </li>
+                               <li>
+                                   Cras justo odioCras justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Fri, 20/10/2017</span>
+                                </li>
+                                <li><a href="#">Clear all</a></li>
+                           </ul>
+                       </div>
+                    <div class="visible-xs-block visible-sm-block">
+                        <a href="" class="icon-search" id="showGlobalSearch"><img src="images/icon_search.svg" width="24px" height="24px"></a>
+                    </div>
+                       <div class="visible-md-block visible-lg-block search-nav-right">
+                            <div class="search-nav-brand text-right">
+                                <img src="images/atkins-snc-lavalin-logo.svg" with="100%" height="100%" alt="Atkins member of the SNC-Lavalin Group">
+                            </div>
+                       </div>
+                       
+                       
+                   </div>
+              </nav>
+          </div>
+      </header>
+       
+        <ul class="side-nav fixed" id="sideNav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <a href="#">
+                            <img src="images/phi_logo.png" alt="PHI - Project management tool">
+                        </a>
+                    </div>
+                    <span class="avatar"><img class="circle" src="images/default_avatar.png"></span>
+                    <span class="name">Santosh K</span>
+                    <a href="#dropLogout" role="button" data-toggle="collapse" class="designation" aria-expanded="false" aria-controls="dropLogout">Project manager <span class="caret pull-right"></span></a>
+                    <div class="collapse" id="dropLogout">
+                        <a href="javascript:void(0);"><i class="fa fa-sign-out"></i> Log out</a>
+                    </div>
+                </div>
+            </li>
+            <li class="text-seperator"><small>main</small></li>
+            <li><a href=""><i class="icon-dashboard"></i> Dashboard</a></li>
+            <li class="active"><a href=""><i class="icon-project"></i> Projects</a></li>
+            <li><a href=""><i class="icon-users"></i> User administration</a></li>
+            <li class="text-seperator"><small>essentials</small></li>
+            <li><a href=""><i class="icon-faq"></i> FAQ's</a></li>
+            <li><a href=""><i class="icon-help"></i> Help &amp; support</a></li>
+            <li><a href=""><i class="icon-yammer"></i> Yammer</a></li>
+            <li><a href=""><i class="icon-design"></i> Design principles</a></li>
+            <li><a href=""><i class="icon-bms"></i> BMS</a></li>
+            <li><a href=""><i class="icon-disclaimer"></i> Disclaimer</a></li>
+            <li>
+                <div class="kaleidoscope">
+                    <img src="images/Atkins_kaleidoscope.png" alt="Atkins - Kaleidoscope">
+                </div>
+            </li>
+        </ul>
+        
+        
+        <main>
+            <div class="container-fluid">
+               <form>
+                <section class="body-section-header">
+                    <h1>Projects</h1>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-9 col-lg-9">
+                            <ol class="breadcrumb">
+                              <li><a href="#">Home</a></li>
+                              <li class="active">New project</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <section class="stepper-form">
+                    <div class="panel panel-default panel-form">
+                        <div class="panel-heading" id="formHeader">
+                            <ol class="nav nav-tabs nav-justified">
+                                <li role="presentation" class="check">
+                                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                                        <span class="round-tab">1</span> Project information
+                                    </a>
+                                </li>
+                                <li role="presentation" class="active">
+                                    <a href="#" aria-controls="profile" role="tab" data-toggle="tab">
+                                        <span class="round-tab">2</span> Project team &amp; Key stakeholder
+                                    </a>
+                                </li>
+                                <li role="presentation" class="disabled">
+                                    <a href="#" aria-controls="messages" role="tab" data-toggle="tab">
+                                        <span class="round-tab">3</span> Packages &amp; deliverables
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                              <div class="col-xs-12 col-md-4 col-lg-4">
+                                  <div class="row">
+                                      <div class="col-xs-12 col-md-12 col-lg-12">
+                                          <div class="form-group">
+                                              <label class="control-label" for="firstName">First name</label>
+                                              <input type="text" class="form-control" id="firstName" placeholder="e.g. Dave" required>
+                                          </div>
+                                      </div>
+                                      <div class="col-xs-12 col-md-12 col-lg-12">
+                                          <div class="form-group">
+                                              <label for="lastName">Last name</label>
+                                              <input type="text" class="form-control" id="lastName" placeholder="e.g. Conibeere" required>
+                                          </div>
+                                      </div>
+                                      <div class="col-xs-12 col-md-12 col-lg-12">
+                                          <div class="form-group">
+                                              <label for="emailAddress">Email address</label>
+                                              <input type="email" class="form-control" id="emailAddress" placeholder="e.g. abd@atkinsglobal.com" required>
+                                          </div>
+                                      </div>
+                                      <div class="col-xs-12 col-md-12 col-lg-12">
+                                          <div class="form-group">
+                                              <label for="emailAddress">Role</label>
+                                              <select class="form-control selectpicker show-tick" title="Select role" id="stakeholderRole" required>
+                                                  <option data-subtext="Project team">Project manager</option>
+                                                  <option data-subtext="Project team">Project technical reviewer</option>
+                                                  <option data-subtext="Project team">Design manager</option>
+                                                  <option data-subtext="Project team">Engineering manager</option>
+                                                  <option data-subtext="Project team">Project technical lead</option>
+                                                  <option data-subtext="Project team">Project director</option>
+                                                  <option data-subtext="Project team">Steering board member</option>
+                                                  <option data-divider="true"></option>
+                                                  <option data-subtext="Key stakeholder">Key stakeholder</option>
+                                              </select>
+                                          </div>
+                                          <button type="submit" class="btn btn-primary">Add</button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-xs-12 col-md-8 col-lg-8">
+                                  <div class="panel panel-default">
+                                      <div class="panel-body">
+                                          <h4>Project team</h4>
+                                          <div class="jumbotron">
+                                              <p class="text-muted">No members assigned.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                      <div class="panel-body">
+                                          <h4>Key stakeholder</h4>
+                                          <div class="jumbotron">
+                                              <p class="text-muted">No members assigned.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="panel-footer-left hidden-xs">
+                                    <button type="button" class="btn btn-link">Back</button>
+                                </div>
+                                <div class="panel-footer-right">
+                                    <button type="button" class="btn btn-link">Cancel</button>
+                                    <button type="button" class="btn btn-default">Save as draft</button>
+                                    <button type="button" class="btn btn-primary">Save &amp; continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </form>
+            </div>
+        </main>
+        
+        
+    
+        <script src="js/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+        
+        <!-- bootstrap calendar -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+        
+        
+        <script src="js/custom.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                $('#firstName').focus();
+            });
+        </script>
+    </body>
+</html>

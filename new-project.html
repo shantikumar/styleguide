@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UI Kits - Example page layout structure</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        
+        <link rel="stylesheet" href="css/tables/responsive.dataTables.css">
+        
+    </head>
+    <body>
+        <a href="javascript:void(0)" class="closebtn hidden" id="closeNav">&nbsp;</a>
+        <header>
+            <div class="top-nav">
+               <div class="visible-xs-block visible-sm-block">
+                   <button type="button" class="navbar-toggle collapsed" id="nav-button">
+                       <span class="sr-only">Toggle navigation</span>
+                       <img src="images/icon_menu.svg" width="24px" height="24px">
+                   </button>
+                   <span class="navbar-brand">New project</span>
+               </div>
+            
+                <nav class="search-nav">
+                   <div class="container-fluid">
+                       <form class="nav-form search-nav-left hidden-xs" role="search" id="globalSearch">
+                           <div class="form-group">
+                               <a href="" id="backSearch" class="visible-xs-block visible-sm-block"><img src="images/icon_back.svg" width="18px" height="18px"></a>
+                               <img src="images/icon_search.svg" width="18px" height="18px" class="hidden-xs">
+                               <input type="search" name="search" class="form-control" placeholder="Search for projects">
+                           </div>
+                       </form>
+                       <div class="dropdown active search-nav-left">
+                           <a href="#" class="dropdown-toggle" id="drop-notification" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <img src="images/icon_notifications.svg"> <span class="badge top">4</span> </a>
+                           <ul class="dropdown-menu drop-medium list-drop-group" aria-labelledby="dLabel">
+                              <li class="heading">Notifications</li>
+                               <li>
+                                   Evaluations for <strong>November 2017</strong> must be completed by 20/10/2017.
+                                   <span class="badge transparent">Today, 2 hrs ago</span>
+                                </li>
+                                <li>
+                                   Cras justo <strong>odioCras</strong> justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Mon, 06/11/2017</span>
+                                </li>
+                               <li>
+                                   Cras justo odioCras justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Wed, 25/10/2017</span>
+                                </li>
+                               <li>
+                                   Cras justo odioCras justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Fri, 20/10/2017</span>
+                                </li>
+                                <li><a href="#">Clear all</a></li>
+                           </ul>
+                       </div>
+                    <div class="visible-xs-block visible-sm-block">
+                        <a href="" class="icon-search" id="showGlobalSearch"><img src="images/icon_search.svg" width="24px" height="24px"></a>
+                    </div>
+                       <div class="visible-md-block visible-lg-block search-nav-right">
+                            <div class="search-nav-brand text-right">
+                                <img src="images/atkins-snc-lavalin-logo.svg" with="100%" height="100%" alt="Atkins member of the SNC-Lavalin Group">
+                            </div>
+                       </div>
+                       
+                       
+                   </div>
+              </nav>
+          </div>
+      </header>
+       
+        <ul class="side-nav fixed" id="sideNav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <a href="#">
+                            <img src="images/phi_logo.png" alt="PHI - Project management tool">
+                        </a>
+                    </div>
+                    <span class="avatar"><img class="circle" src="images/default_avatar.png"></span>
+                    <span class="name">Santosh K</span>
+                    <a href="#dropLogout" role="button" data-toggle="collapse" class="designation" aria-expanded="false" aria-controls="dropLogout">Project manager <span class="caret pull-right"></span></a>
+                    <div class="collapse" id="dropLogout">
+                        <a href="javascript:void(0);"><i class="fa fa-sign-out"></i> Log out</a>
+                    </div>
+                </div>
+            </li>
+            <li class="text-seperator"><small>main</small></li>
+            <li><a href=""><i class="icon-dashboard"></i> Dashboard</a></li>
+            <li class="active"><a href=""><i class="icon-project"></i> Projects</a></li>
+            <li><a href="tables.html"><i class="icon-users"></i> User administration</a></li>
+            <li class="text-seperator"><small>essentials</small></li>
+            <li><a href=""><i class="icon-faq"></i> FAQ's</a></li>
+            <li><a href=""><i class="icon-help"></i> Help &amp; support</a></li>
+            <li><a href=""><i class="icon-yammer"></i> Yammer</a></li>
+            <li><a href=""><i class="icon-design"></i> Design principles</a></li>
+            <li><a href=""><i class="icon-bms"></i> BMS</a></li>
+            <li><a href=""><i class="icon-disclaimer"></i> Disclaimer</a></li>
+            <li>
+                <div class="kaleidoscope">
+                    <img src="images/Atkins_kaleidoscope.png" alt="Atkins - Kaleidoscope">
+                </div>
+            </li>
+        </ul>
+        
+        
+        <main>
+            <div class="container-fluid">
+                <section class="body-section-header">
+                    <h1>Projects</h1>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-9 col-lg-9">
+                            <ol class="breadcrumb">
+                              <li><a href="#">Home</a></li>
+                              <li class="active">New project</li>
+                            </ol>
+                        </div>
+                        <div class="col-xs-12 col-md-3 col-lg-3">
+                            <button type="button" class="btn btn-default pull-right effect hidden-xs">
+                                <span class="hidden-xs visible-md-block visible-lg-block">All projects</span>
+                                <span class="visible-xs"><img src="images/icon_plus_white.svg" width="48px" height="48px"></span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="stepper-form">
+                    <div class="panel panel-default panel-form">
+                        <div class="panel-heading" id="formHeader">
+                            <ol class="nav nav-tabs nav-justified">
+                                <li role="presentation" class="check">
+                                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                                        <span class="round-tab">1</span> Project information
+                                    </a>
+                                </li>
+                                <li role="presentation" class="active">
+                                    <a href="#" aria-controls="profile" role="tab" data-toggle="tab">
+                                        <span class="round-tab">2</span> Project team &amp; Key stakeholder
+                                    </a>
+                                </li>
+                                <li role="presentation" class="disabled">
+                                    <a href="#" aria-controls="messages" role="tab" data-toggle="tab">
+                                        <span class="round-tab">3</span> Packages &amp; deliverables
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="panel-body has-collapse">
+                            <a class="text-uppercase collapse-header" data-toggle="collapse" data-target="#collaspe1" href="javascript:;" aria-expanded="false">Add project information</a>
+                                    <div id="collaspe1" class="collapse in">
+                                      <div class="panel-body">
+                                        <div class="row">
+                                         <p class="pull-lg-right"><a href="upload.html" class="btn btn-primary">Upload from template</a></p>
+                                          <div class="col-xs-12 col-md-2 col-lg-2">
+                                              <div class="form-group has-error">
+                                                  <label for="projectNumber">Project number</label>
+                                                  <input type="number" class="form-control" id="projectNumber" placeholder="e.g. 5156488">
+                                                  <span id="helpBlock2" class="help-block">Enter numbers only</span>
+                                              </div>
+                                          </div>
+                                          <div class="col-xs-12 col-md-6 col-lg-6">
+                                              <div class="form-group">
+                                                  <label for="projectName">Project name</label>
+                                                  <input type="text" class="form-control" id="projectName" maxlength="250" placeholder="e.g. Stephenson street pedestrian bridges">
+                                                  <p class="text-muted text-right"><span id="countChar"></span>/250</p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-8 col-lg-8">
+                                                    <div class="form-group">
+                                                        <label class="control-label">
+                                                        	Project size 
+                                                        	<a class="" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+															   <img src="images/svg/faq_default.svg" width="16px" height="16px">
+															</a>
+                                                       </label>
+                                                        
+                                                       
+                                                        <div class="switch-field large">
+                                                            <input type="radio" id="projectLarge" name="switch_1" value="yes" checked/>
+                                                            <label for="projectLarge">Large</label>
+                                                            <input type="radio" id="projectMedium" name="switch_1" value="no" />
+                                                            <label for="projectMedium">Medium</label>
+                                                            <input type="radio" id="projectSmall" name="switch_1" value="no" />
+                                                            <label for="projectSmall">Small</label>
+                                                        </div>
+                                                    </div>
+													<div class="collapse table-responsive help-section" id="collapseExample" role="alert">
+														<table class="table table-bordered">
+															<thead>
+																<tr>
+																	<th> Measurement parameters </th>
+																	<th> Large </th>
+																	<th> Medium </th>
+																	<th> Small </th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<th scope="row"><code>Project management</code></th>
+																	<td class="is-visible">&nbsp;</td>
+																	<td class="is-visible">&nbsp;</td>
+																	<td class="is-hidden">&nbsp;</td>
+																</tr>
+																<tr>
+																	<th scope="row"><code>Technical quality</code></th>
+																	<td class="is-visible">&nbsp;</td>
+																	<td class="is-visible">&nbsp;</td>
+																	<td class="is-visible">&nbsp;</td>
+																</tr>
+																<tr>
+																	<th scope="row"><code>Collaboration</code></th>
+																	<td class="is-visible">&nbsp;</td>
+																	<td class="is-hidden">&nbsp;</td>
+																	<td class="is-hidden">&nbsp;</td>
+																</tr>
+																<tr>
+																	<th scope="row"><code>Innovation</code></th>
+																	<td class="is-visible">&nbsp;</td>
+																	<td class="is-hidden">&nbsp;</td>
+																	<td class="is-hidden">&nbsp;</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+                                                </div>
+                                            </div>
+                                          <div class="row">
+                                              <div class="col-xs-12 col-md-8 col-lg-8">
+                                                  <div class="form-group form-calendar">
+                                                      <label for="dateRange">Project start &amp; end date</label>
+                                                      <input type="text" class="form-control" id="dateRange" name="datefilter" value="" placeholder="Select start and end date range">
+                                                      <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-xs-12 col-md-4 col-lg-4">
+                                                  <div class="form-group">
+                                                      <label class="control-label">Project review cycle</label>
+                                                      <div class="switch-field small">
+                                                          <input type="radio" id="projectBiWeekly" name="switch_2" value="yes" checked/>
+                                                          <label for="projectBiWeekly">Bi-weekly</label>
+                                                          <input type="radio" id="projectMonthly" name="switch_2" value="no" />
+                                                          <label for="projectMonthly">Monthly</label>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-xs-12 col-md-4 col-lg-4">
+                                                  <div class="form-group">
+                                                      <label for="selectCurrency">Currency</label>
+                                                      <select class="form-control selectpicker show-tick" title="Select currency..." id="selectCurrency">
+                                                          <option>GBP - United Kingdom Pound</option>
+                                                          <option>USD - United States Dollar</option>
+                                                          <option>UYU - Uruguay Peso</option>
+                                                      </select>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-xs-12 col-md-4 col-lg-4">
+                                                  <div class="form-group">
+                                                      <label for="workPackageName">Work package name</label>
+                                                      <input type="text" class="form-control" id="workPackageName" placeholder="e.g. Totenhale station">
+                                                  </div>
+                                              </div>
+                                              <div class="col-xs-12 col-md-4 col-lg-4">
+                                                  <div class="form-group">
+                                                      <label for="workPackageType">Work package type</label>
+                                                      <input type="text" class="form-control" id="workPackageType" placeholder="e.g. Structures">
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                       
+                                       
+                                       
+                                    <a class="text-uppercase collapse-header" data-toggle="collapse" data-target="#collaspe2" href="javascript:;" aria-expanded="false">
+                                      Additional information
+                                    </a>
+                                    <div id="collaspe2" class="panel-collapse collapse in">
+                                      <div class="panel-body">
+                                          <div class="row">
+                                              <div class="col-xs-12 col-md-4 col-lg-4">
+                                                  <div class="form-group">
+                                                      <label for="ProjectOffice">Lead project office</label>
+                                                      <input type="text" class="form-control" id="ProjectOffice" placeholder="e.g. Croydon">
+                                                  </div>
+                                              </div>
+                                              <div class="col-xs-12 col-md-4 col-lg-4">
+                                                  <div class="form-group">
+                                                      <label for="projectManager">Project manager</label>
+                                                      <input type="text" class="form-control" id="projectManager" placeholder="e.g. Dave Conibeere">
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-xs-12 col-md-4 col-lg-4">
+                                                  <div class="form-group">
+                                                      <label for="region">Region</label>
+                                                      <input type="text" class="form-control" id="region" placeholder="e.g. UK&amp;E">
+                                                  </div>
+                                              </div>
+                                              <div class="col-xs-12 col-md-4 col-lg-4">
+                                                  <div class="form-group">
+                                                      <label for="sector">Sector</label>
+                                                      <input type="text" class="form-control" id="sector" placeholder="e.g. Strategic Rail UK">
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-xs-12 col-md-4 col-lg-4">
+                                                  <div class="form-group">
+                                                      <label for="deliveryBusiness">Delivery business</label>
+                                                      <input type="text" class="form-control" id="deliveryBusiness" placeholder="e.g. GPP-GDC - Projects">
+                                                  </div>
+                                              </div>
+                                              <div class="col-xs-12 col-md-4 col-lg-4">
+                                                  <div class="form-group">
+                                                      <label for="deliveryPractice">Delivery practice</label>
+                                                      <input type="text" class="form-control" id="deliveryPractice" placeholder="e.g. GDC practice">
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                           
+                        </div>
+                        <div class="panel-footer">
+                            <button type="button" class="btn btn-link">Cancel</button>
+                            <button type="button" class="btn btn-default">Save as draft</button>
+                            <a href="stakeholder.html" class="btn btn-primary">Save &amp; Continue</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        
+    
+        <script src="js/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+        
+        <!-- bootstrap calendar -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+        
+        
+        <script src="js/custom.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+
+                      $('input[name="datefilter"]').daterangepicker({
+                          autoUpdateInput: false,
+                          locale: {
+                              cancelLabel: 'Clear'
+                          }
+                      });
+
+                      $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+                          $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+                      });
+
+                      $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+                          $(this).val('');
+                      });
+                    
+                
+                $('#projectNumber').focus();
+                $('#projectSizePopout').popover();
+                
+                //character count
+                var text_min = 0;
+                var text_max = 250;
+                    $("#countChar").html(text_min);
+                    $("#projectName").keyup(function() {
+                    var text_length = $("#projectName").val().length;
+                    var text_remaining = text_min + text_length;
+                    $("#countChar").html(text_remaining);
+                });
+                
+                
+//                $(window).scroll(function(){
+//                    if ($(window).scrollTop() >= 150) {
+//                       $('#formHeader').addClass('fixed-form-header');
+//                    }
+//                    else {
+//                       $('#formHeader').removeClass('fixed-form-header');
+//                    }
+//                });
+                
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4089 375 16 19.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #374e62;
+      }
+    </style>
+  </defs>
+  <g id="ic_notifications_24px" transform="translate(3980)">
+    <path id="ic_notifications_24px-2" data-name="ic_notifications_24px" class="cls-1" d="M12,22a2.006,2.006,0,0,0,2-2H10A2,2,0,0,0,12,22Zm6-6V11c0-3.07-1.64-5.64-4.5-6.32V4a1.5,1.5,0,0,0-3,0v.68C7.63,5.36,6,7.92,6,11v5L4,18v1H20V18Z" transform="translate(105 372.5)"/>
+  </g>
+</svg>

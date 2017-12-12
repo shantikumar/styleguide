@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4000 158 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #374e62;
+      }
+    </style>
+  </defs>
+  <g id="ic_error_outline_24px" transform="translate(3980)">
+    <path id="ic_error_outline_24px-2" data-name="ic_error_outline_24px" class="cls-1" d="M7.4,9.8H8.6V11H7.4ZM7.4,5H8.6V8.6H7.4Zm.594-3A6,6,0,1,0,14,8,6,6,0,0,0,7.994,2ZM8,12.8A4.8,4.8,0,1,1,12.8,8,4.8,4.8,0,0,1,8,12.8Z" transform="translate(34 172) rotate(180)"/>
+  </g>
+</svg>

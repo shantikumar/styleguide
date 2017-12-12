@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>UI Kits - Example page layout structure</title>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="top-nav">
+               <div class="visible-xs-block visible-sm-block">
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </button>
+                   <a class="navbar-brand" href="#">PHI</a>
+               </div>
+            
+                <nav class="search-nav">
+                   <div class="container-fluid">
+                       <form class="nav-form search-nav-left" role="search">
+                           <div class="form-group">
+                               <input type="search" name="search" class="form-control" placeholder="Search for projects">
+                           </div>
+                       </form>
+                       <div class="dropdown search-nav-left">
+                           <a href="#" class="dropdown-toggle" id="drop-notification" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <i class="fa fa-bell-o fa-2x"></i> <span class="badge top">4</span> </a>
+                           <ul class="dropdown-menu drop-medium list-drop-group" aria-labelledby="dLabel">
+                              <li class="heading">Notifications</li>
+                               <li>
+                                   Evaluations for <strong>November 2017</strong> must be completed by 20/10/2017.
+                                   <span class="badge transparent">Today, 2 hrs ago</span>
+                                </li>
+                                <li>
+                                   Cras justo <strong>odioCras</strong> justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Mon, 06/11/2017</span>
+                                </li>
+                               <li>
+                                   Cras justo odioCras justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Wed, 25/10/2017</span>
+                                </li>
+                               <li>
+                                   Cras justo odioCras justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Fri, 20/10/2017</span>
+                                </li>
+                                <li><a href="#">Clear all</a></li>
+                           </ul>
+                       </div>
+                       <div class="search-nav-right visible-md-block visible-lg-block">
+                            <div class="search-nav-brand text-right">
+                                <img src="images/Dark_blue_Atkins_logo.png" with="100%" height="100%" alt="Atkins member of the SNC-Lavalin Group">
+                            </div>
+                       </div>
+                   </div>
+              </nav>
+          </div>
+      </header>
+        <ul class="side-nav fixed">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <a href="#">
+                            <img src="images/phi_logo.png" alt="PHI - Project management tool">
+                        </a>
+                    </div>
+                    <span class="avatar"><img class="circle" src="images/default_avatar.png"></span>
+                    <span class="name">Santosh K</span>
+                    <a href="#dropLogout" role="button" data-toggle="collapse" class="designation" aria-expanded="false" aria-controls="dropLogout">Project manager <span class="caret pull-right"></span></a>
+                    <div class="collapse" id="dropLogout">
+                        <a href="javascript:void(0);"><i class="fa fa-sign-out"></i> Log out</a>
+                    </div>
+                </div>
+            </li>
+            <li class="text-seperator"><small>main</small></li>
+            <li><a href=""><i class="fa fa-th-large"></i> Dashboard</a></li>
+            <li class="active"><a href=""><i class="fa fa-th-large"></i> Projects</a></li>
+            <li><a href=""><i class="fa fa-users"></i> User administration</a></li>
+            <li class="text-seperator"><small>essentials</small></li>
+            <li><a href=""><i class="fa fa-th-large"></i> FAQ's</a></li>
+            <li><a href=""><i class="fa fa-th-large"></i> Help &amp; support</a></li>
+            <li><a href=""><i class="fa fa-th-large"></i> Yammer</a></li>
+            <li><a href=""><i class="fa fa-th-large"></i> Design principles</a></li>
+            <li><a href=""><i class="fa fa-th-large"></i> Business Management System</a></li>
+            <li><a href=""><i class="fa fa-th-large"></i> Disclaimer</a></li>
+            <li>
+                <div class="kaleidoscope">
+                    <img src="images/Atkins_kaleidoscope.png" alt="Atkins - Kaleidoscope">
+                </div>
+            </li>
+        </ul>
+        <main>
+            <div class="container-fluid">
+                <section class="body-section-header">
+                    <h1>User administration</h1>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-9 col-lg-9">
+                            <ol class="breadcrumb">
+                              <li><a href="#">Home</a></li>
+                              <li class="active">Users</li>
+                            </ol>
+                        </div>
+                        <div class="col-xs-12 col-md-3 col-lg-3">
+                            <button type="button" class="btn btn-primary btn-lg pull-right">Add new user</button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Manage users</h3>
+                            <div class="row">
+                                <div class="col-xs-6 col-md-9 col-lg-9">
+                                    <form class="form-inline">
+                                        <input type="search" class="form-control" id="searchUserInput" placeholder="Search users...">
+                                    </form>
+                                </div>
+                                <div class="col-xs-6 col-md-3 col-lg-3">
+                                   <ul class="list-inline">
+                                       <li><i class="fa fa-filter"></i> Filter by</li>
+                                       <li>
+                                            <select class="form-control">
+                                                <option value="" selected>Practice</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                            </select>
+                                       </li>
+                                       <li>
+                                           <select class="form-control">
+                                               <option value="" selected>Roles</option>
+                                               <option value="">1</option>
+                                               <option value="">2</option>
+                                               <option value="">3</option>
+                                           </select>  
+                                       </li>
+                                   </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

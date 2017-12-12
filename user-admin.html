@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UI Kits - Example page layout structure</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        
+        <link rel="stylesheet" href="css/tables/responsive.dataTables.css">
+        
+    </head>
+    <body>
+        <a href="javascript:void(0)" class="closebtn hidden" id="closeNav">&nbsp;</a>
+        <header>
+            <div class="top-nav">
+               <div class="visible-xs-block visible-sm-block">
+                   <button type="button" class="navbar-toggle collapsed" id="nav-button">
+                       <span class="sr-only">Toggle navigation</span>
+                       <img src="images/icon_menu.svg" width="24px" height="24px">
+                   </button>
+                   <span class="navbar-brand">User administration</span>
+               </div>
+            
+                <nav class="search-nav">
+                   <div class="container-fluid">
+                       <form class="nav-form search-nav-left hidden-xs" role="search" id="globalSearch">
+                           <div class="form-group">
+                               <a href="" id="backSearch" class="visible-xs-block visible-sm-block"><img src="images/icon_back.svg" width="18px" height="18px"></a>
+                               <img src="images/icon_search.svg" width="18px" height="18px" class="hidden-xs">
+                               <input type="search" name="search" class="form-control" placeholder="Search for projects">
+                           </div>
+                       </form>
+                       <div class="dropdown active search-nav-left">
+                           <a href="#" class="dropdown-toggle" id="drop-notification" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <img src="images/icon_notifications.svg"> <span class="badge top">4</span> </a>
+                           <ul class="dropdown-menu drop-medium list-drop-group" aria-labelledby="dLabel">
+                              <li class="heading">Notifications</li>
+                               <li>
+                                   Evaluations for <strong>November 2017</strong> must be completed by 20/10/2017.
+                                   <span class="badge transparent">Today, 2 hrs ago</span>
+                                </li>
+                                <li>
+                                   Cras justo <strong>odioCras</strong> justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Mon, 06/11/2017</span>
+                                </li>
+                               <li>
+                                   Cras justo odioCras justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Wed, 25/10/2017</span>
+                                </li>
+                               <li>
+                                   Cras justo odioCras justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Fri, 20/10/2017</span>
+                                </li>
+                                <li><a href="#">Clear all</a></li>
+                           </ul>
+                       </div>
+                    <div class="visible-xs-block visible-sm-block">
+                        <a href="" class="icon-search" id="showGlobalSearch"><img src="images/icon_search.svg" width="24px" height="24px"></a>
+                    </div>
+                       <div class="visible-md-block visible-lg-block search-nav-right">
+                            <div class="search-nav-brand text-right">
+                                <img src="images/atkins-snc-lavalin-logo.svg" with="100%" height="100%" alt="Atkins member of the SNC-Lavalin Group">
+                            </div>
+                       </div>
+                       
+                       
+                   </div>
+              </nav>
+          </div>
+      </header>
+       
+        <ul class="side-nav fixed" id="sideNav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <a href="#">
+                            <img src="images/phi_logo.png" alt="PHI - Project management tool" width="110" height="110">
+                        </a>
+                    </div>
+                    <span class="avatar"><img class="circle" src="images/default_avatar.png"></span>
+                    <span class="name">Santosh K</span>
+                    <a href="#dropLogout" role="button" data-toggle="collapse" class="designation" aria-expanded="false" aria-controls="dropLogout">Project manager <span class="caret pull-right"></span></a>
+                    <div class="collapse" id="dropLogout">
+                        <a href="javascript:void(0);"><i class="fa fa-sign-out"></i> Log out</a>
+                    </div>
+                </div>
+            </li>
+            <li class="text-seperator"><small>main</small></li>
+            <li><a href=""><i class="icon-dashboard"></i> Dashboard</a></li>
+            <li><a href="new-project.html"><i class="icon-project"></i> Projects</a></li>
+            <li class="active"><a href=""><i class="icon-users"></i> User administration</a></li>
+            <li class="text-seperator"><small>essentials</small></li>
+            <li><a href=""><i class="icon-faq"></i> FAQ's</a></li>
+            <li><a href=""><i class="icon-help"></i> Help &amp; support</a></li>
+            <li><a href=""><i class="icon-yammer"></i> Yammer</a></li>
+            <li><a href=""><i class="icon-design"></i> Design principles</a></li>
+            <li><a href=""><i class="icon-bms"></i> BMS</a></li>
+            <li><a href=""><i class="icon-disclaimer"></i> Disclaimer</a></li>
+            <li>
+                <div class="kaleidoscope">
+                    <img src="images/Atkins_kaleidoscope.png" alt="Atkins - Kaleidoscope">
+                </div>
+            </li>
+        </ul>
+        
+        
+        <main>
+            <div class="container-fluid">
+                <section class="body-section-header">
+                    <h1>User administration</h1>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-9 col-lg-9">
+                            <ol class="breadcrumb">
+                              <li><a href="#">Home</a></li>
+                              <li class="active">Users</li>
+                            </ol>
+                        </div>
+                        <div class="col-xs-12 col-md-3 col-lg-3">
+                            <button type="button" class="btn btn-primary pull-lg-right effect btn-floating">
+                                <span class="hidden-xs visible-md-block visible-lg-block">Add new user</span>
+                                <span class="visible-xs"><img src="images/icon_plus_white.svg" width="16px" height="16px"></span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3 class="section-header">Manage users</h3>
+                            <ul class="list-inline pull-right hidden-xs">
+                               <li><i class="fa fa-filter"></i> Filter by</li>
+                               <li>
+                                    <select class="selectpicker show-menu-arrow show-tick">
+                                        <option selected>All practices</option>
+                                        <option>Civil &#40;Highway &amp; Track &#41;</option>
+                                        <option>Water &amp; Environment</option>
+                                        <option>Digital</option>
+                                        <option>Property</option>
+                                        <option>Energy</option>
+                                        <option>Rail Solutions</option>
+                                        <option>India Corporate</option>
+                                    </select>
+                               </li>
+                               <li>
+                                   <select class="selectpicker show-menu-arrow show-tick">
+                                        <option selected>All roles</option>
+                                        <option>Executive user</option>
+										<option>Independent project reviewer</option>
+										<option>Key stakeholder</option>
+										<option>Site administrator</option>
+                                   </select>  
+                               </li>
+                           </ul>
+                
+                             <table id="example" class="table table-hover" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Name &amp; Email</th>
+                                        <th>Business &amp; Practice</th>
+                                        <th>Role</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="avatar pull-left hidden-xs">
+                                                <img class="circle" src="images/default_avatar.png">
+                                            </span>
+                                            <h4>Tiger Nixon</h4>
+                                            <span class="center-block text-muted">Tiger.Nixon@atkinsglobal.com</span>
+                                        </td>
+                                        <td>
+                                            <h4>Civil &#40;Highway &amp; Track &#41;</h4>
+                                            <span class="center-block text-muted">GDC Management</span>
+                                        </td>
+                                         <td>
+                                            <h4>Site admin, Executive</h4>
+                                        </td>
+
+                                        <td>
+                                            <a href="" class="btn btn-link"><img src="images/icon_edit.svg" width="16px" height="16px"></a>
+                                            <a href="" class="btn btn-link"><img src="images/icon_delete.svg" width="16px" height="16px"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="avatar pull-left hidden-xs">
+                                                <img class="circle" src="images/default_avatar.png">
+                                            </span>
+                                            <h4>Garrett Winters</h4>
+                                            <span class="center-block text-muted">Garrett.Winters@atkinsglobal.com</span>
+                                        </td>
+                                        <td>
+                                            <h4>Civil &#40;Highway &amp; Track &#41;</h4>
+                                            <span class="center-block text-muted">GDC Management</span>
+                                        </td>
+                                        <td>
+                                            <h4>Stakeholder</h4>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-link"><img src="images/icon_edit.svg" width="16px" height="16px"></a>
+                                            <a href="" class="btn btn-link"><img src="images/icon_delete.svg" width="16px" height="16px"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="avatar pull-left hidden-xs">
+                                                <img class="circle" src="images/default_avatar.png">
+                                            </span>
+                                            <h4>Ashton Cox</h4>
+                                            <span class="center-block text-muted">Ashton.Cox@atkinsglobal.com</span>
+                                        </td>
+                                        <td>
+                                            <h4>Water &amp; Environment</h4>
+                                            <span class="center-block text-muted">GDC Management</span>
+                                        </td>
+                                        <td>
+                                             <h4>Executive, Project manager, Stakeholder</h4>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-link"><img src="images/icon_edit.svg" width="16px" height="16px"></a>
+                                            <a href="" class="btn btn-link"><img src="images/icon_delete.svg" width="16px" height="16px"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="avatar pull-left hidden-xs">
+                                                <img class="circle" src="images/default_avatar.png">
+                                            </span>
+                                            <h4>Cedric Kelly</h4>
+                                            <span class="center-block text-muted">Cedric.Kelly@atkinsglobal.com</span>
+                                        </td>
+                                        <td>
+                                            <h4>Water &amp; Environment</h4>
+                                            <span class="center-block text-muted">GDC Management</span>
+                                        </td>
+                                        <td>
+                                             <h4>Checker</h4>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-link"><img src="images/icon_edit.svg" width="16px" height="16px"></a>
+                                            <a href="" class="btn btn-link"><img src="images/icon_delete.svg" width="16px" height="16px"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Charde Marshall</td>
+                                        <td>Regional Director</td>
+                                        <td>San Francisco</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Haley Kennedy</td>
+                                        <td>Senior Marketing Designer</td>
+                                        <td>London</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tatyana Fitzpatrick</td>
+                                        <td>Regional Director</td>
+                                        <td>London</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michael Silva</td>
+                                        <td>Marketing Designer</td>
+                                        <td>London</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Paul Byrd</td>
+                                        <td>Chief Financial Officer (CFO)</td>
+                                        <td>New York</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gloria Little</td>
+                                        <td>Systems Administrator</td>
+                                        <td>New York</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bradley Greer</td>
+                                        <td>Software Engineer</td>
+                                        <td>London</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dai Rios</td>
+                                        <td>Personnel Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jenette Caldwell</td>
+                                        <td>Development Lead</td>
+                                        <td>New York</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yuri Berry</td>
+                                        <td>Chief Marketing Officer (CMO)</td>
+                                        <td>New York</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Caesar Vance</td>
+                                        <td>Pre-Sales Support</td>
+                                        <td>New York</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Doris Wilder</td>
+                                        <td>Sales Assistant</td>
+                                        <td>Sidney</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Angelica Ramos</td>
+                                        <td>Chief Executive Officer (CEO)</td>
+                                        <td>London</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gavin Joyce</td>
+                                        <td>Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jennifer Chang</td>
+                                        <td>Regional Director</td>
+                                        <td>Singapore</td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil"></i></a>
+                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        
+    
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+        
+        <script src="js/tables/jquery.dataTables.js"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.js"></script>
+        <script src="js/tables/dataTables.responsive.js"></script>
+        <script src="js/custom.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                var table = $('#example').DataTable( {
+                    "dom": '<"top"fi>rt<"bottom"p><"clear">',
+                    responsive: true
+                } );
+                
+                $("#example thead").remove();
+                
+                $('#example_length').remove();
+                
+                $('th').unbind('click.sorting');
+                
+                
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4000 34 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #374e62;
+      }
+    </style>
+  </defs>
+  <g id="ic_dashboard_24px" transform="translate(3980)">
+    <path id="ic_dashboard_24px-2" data-name="ic_dashboard_24px" class="cls-1" d="M3,9.667H8.333V3H3ZM3,15H8.333V11H3Zm6.667,0H15V8.333H9.667Zm0-12V7H15V3Z" transform="translate(17 31)"/>
+  </g>
+</svg>

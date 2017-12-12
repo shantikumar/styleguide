@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UI Kits - Example page layout structure</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        
+        <link rel="stylesheet" href="css/tables/responsive.dataTables.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="top-nav">
+               <div class="visible-xs-block visible-sm-block">
+                   <button type="button" class="navbar-back">
+                       <span class="sr-only">Toggle navigation</span>
+                   </button>
+                   <a class="navbar-brand" href="#">Add user</a>
+               </div>
+            
+                <nav class="search-nav">
+                   <div class="container-fluid">
+                       <form class="nav-form search-nav-left" role="search">
+                           <div class="form-group">
+                               <input type="search" name="search" class="form-control" placeholder="Search for projects">
+                           </div>
+                       </form>
+                       <div class="dropdown search-nav-left">
+                           <a href="#" class="dropdown-toggle" id="drop-notification" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <i class="fa fa-bell-o fa-2x"></i> <span class="badge top">4</span> </a>
+                           <ul class="dropdown-menu drop-medium list-drop-group" aria-labelledby="dLabel">
+                              <li class="heading">Notifications</li>
+                               <li>
+                                   Evaluations for <strong>November 2017</strong> must be completed by 20/10/2017.
+                                   <span class="badge transparent">Today, 2 hrs ago</span>
+                                </li>
+                                <li>
+                                   Cras justo <strong>odioCras</strong> justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Mon, 06/11/2017</span>
+                                </li>
+                               <li>
+                                   Cras justo odioCras justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Wed, 25/10/2017</span>
+                                </li>
+                               <li>
+                                   Cras justo odioCras justo odioCras justo odioCras justo odioCras justo odio
+                                   <span class="badge transparent">Fri, 20/10/2017</span>
+                                </li>
+                                <li><a href="#">Clear all</a></li>
+                           </ul>
+                       </div>
+                       <div class="search-nav-right visible-md-block visible-lg-block">
+                            <div class="search-nav-brand text-right">
+                                <img src="images/Dark_blue_Atkins_logo.svg" with="100%" height="100%" alt="Atkins member of the SNC-Lavalin Group">
+                            </div>
+                       </div>
+                   </div>
+              </nav>
+          </div>
+      </header>
+        <ul class="side-nav fixed">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <a href="#">
+                            <img src="images/phi_logo.png" alt="PHI - Project management tool" width="110" height="110">
+                        </a>
+                    </div>
+                    <span class="avatar"><img class="circle" src="images/default_avatar.png"></span>
+                    <span class="name">Santosh K</span>
+                    <a href="#dropLogout" role="button" data-toggle="collapse" class="designation" aria-expanded="false" aria-controls="dropLogout">Project manager <span class="caret pull-right"></span></a>
+                    <div class="collapse" id="dropLogout">
+                        <a href="javascript:void(0);"><i class="fa fa-sign-out"></i> Log out</a>
+                    </div>
+                </div>
+            </li>
+            <li class="text-seperator"><small>main</small></li>
+            <li><a href=""><i class="icon-dashboard"></i> Dashboard</a></li>
+            <li><a href=""><i class="icon-project"></i> Projects</a></li>
+            <li class="active"><a href=""><i class="icon-users"></i> User administration</a></li>
+            <li class="text-seperator"><small>essentials</small></li>
+            <li><a href=""><i class="icon-faq"></i> FAQ's</a></li>
+            <li><a href=""><i class="icon-help"></i> Help &amp; support</a></li>
+            <li><a href=""><i class="icon-yammer"></i> Yammer</a></li>
+            <li><a href=""><i class="icon-design"></i> Design principles</a></li>
+            <li><a href=""><i class="icon-bms"></i> BMS</a></li>
+            <li><a href=""><i class="icon-disclaimer"></i> Disclaimer</a></li>
+            <li>
+                <div class="kaleidoscope">
+                    <img src="images/Atkins_kaleidoscope.png" alt="Atkins - Kaleidoscope">
+                </div>
+            </li>
+        </ul>
+        <main>
+            <div class="container-fluid">
+               <form>
+                <section class="body-section-header">
+                    <h1>User administration</h1>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-9 col-lg-9">
+                            <ol class="breadcrumb">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="table.html">User administration</a></li>
+                              <li class="active">Add user</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="panel panel-default panel-form">
+                        <div class="panel-heading">
+                            <h3 class="heading">New user</h3>
+                        </div>
+                        <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-6">
+                                                <div class="form-group has-error">
+                                                    <label for="inputFirstName">First name</label>
+                                                	<input type="text" class="form-control" id="inputFirstName" placeholder="e.g. Dave" required>
+                                                	<span id="helpBlock2" class="help-block">First name is required</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="inputLastName">Last name</label>
+                                                    <input type="text" class="form-control" id="inputLastName" placeholder="e.g. Connibeere" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmailAddress">Email address</label>
+                                            <input type="email" class="form-control" id="inputEmailAddress" placeholder="e.g. abc@atkinsglobal.com" required>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="inputBusinessName">Business name</label>
+                                                    <select class="selectpicker show-menu-arrow show-tick" title="Select practice" data-width="100%" id="inputBusinessName" required>
+                                                        <option>Civil &#40;Highway &amp; Track &#41;</option>
+                                                        <option>Water &amp; Environment</option>
+                                                        <option>Digital</option>
+                                                        <option>Property</option>
+                                                        <option>Energy</option>
+                                                        <option>Rail Solutions</option>
+                                                        <option>India Corporate</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="inputPracticeName">Practice name</label>
+                                                    <select class="selectpicker show-menu-arrow show-tick" title="Select practice" data-width="100%" id="inputPracticeName" required>
+                                                        <option>Civil &#40;Highway &amp; Track &#41;</option>
+                                                        <option>Water &amp; Environment</option>
+                                                        <option>Digital</option>
+                                                        <option>Property</option>
+                                                        <option>Energy</option>
+                                                        <option>Rail Solutions</option>
+                                                        <option>India Corporate</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputDropRoles" class="center-block">Role</label>
+                                            <select class="selectpicker show-menu-arrow show-tick" title="Select role" data-width="100%" id="inputDropRoles" required>
+                                                <option>Executive User</option>
+                                                <option>Independent project reviewer</option>
+                                                <option>Key stakeholder</option>
+                                                <option>Site administrator</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+						<div class="panel-footer">
+							<button type="submit" class="btn btn-primary effect">Save</button>
+							<a class="btn btn-link" href="tables.html">Cancel</a>
+						</div>
+                    </div>
+                </section>
+                </form>
+            </div>
+        </main>
+        
+    
+       
+       
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#inputFirstName').focus();
+            });
+        </script>
+        
+    </body>
+</html>
